@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Contact Adinnu Blessing Chiamaka, an Administrative Virtual Assistant."
+    />
+    <link rel="icon" href="/static/Images/LOGO_ME.png" />
+    <title>Thank you! - {{name}} </title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navigation menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a><img src="/static/Images/LOGO_ME.png" alt=""></a></div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="http://twitter.com/ChimaxBlessing/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/blessing.chiamaka.16121" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/blessing-chiamaka-2b895b234" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="http://wa.me/2347048561410 "><i class="fab fa-whatsapp" target="_blank"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Contact Me section Start -->
+<section class="contact" >
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="topic">Thank you!  <strong>{{ name }}</strong> <br> I will get in touch with you shortly!</div>
+</section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" >
+      <div class="content">
+        <div class="title"><span>My Socials</span></div>
+        <div class="text">
+
+          <div class="button">
+            <button>Let's connect</button>
+          </div>
+          <div class="get-in-touch">
+            <div class="address">
+
+              <a
+                class="address-link"
+                href="contact.html"
+                ><div class="address-img">
+                  <img class="footer-img" src="/static/Images/contact-email.svg" alt="contact-address" />
+                </div>
+              </a>
+            </div>
+            <div class="address">
+
+              <a class="address-link" href="tel: +234-704-856-1410"
+                > <div class="address-img">
+                  <img class="footer-img" src="/static/Images/contact-phone.svg" alt="contact-address" />
+                </div></a
+              >
+            </div>
+          <div>
+            <a class="footer-link" href="http://twitter.com/blessing_chimax"  target="_blank" >
+              <div class="address-img"><img
+                class="footer-img"
+                src="/static/Images/twitter.svg"
+                alt="social-icon"
+            /></div></a>
+          </div>
+          <div>
+            <a class="footer-link" href="https://www.linkedin.com/in/blessing-chiamaka-2b895b234"
+             target="_blank" ><div class="address-img"><img
+                class="footer-img"
+                src="/static/Images/linkedin.svg"
+                alt="social-icon"
+            /></div></a>
+          </div>
+          <div>
+            <a class="footer-link" href="https://www.facebook.com/blessing.chiamaka.16121"
+            target="_blank"  ><div class="address-img"><img
+                class="footer-img"
+                src="/static/Images/logo-facebook.svg"
+                alt="social-icon"
+            /></div></a>
+          </div>
+          <div>
+            <a class="footer-link" href="http://wa.me/2347048561410 " target="_blank"
+              ><div class="address-img"><img
+                class="footer-img"
+                src="/static/Images/whatsapp.svg"
+                alt="social-icon"
+            /></div></a>
+          </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span> copyright &copy; BlesynChimax, <span id="year"></span> All rights reserved!</span>
+     <p ><a class="dev" href=""> Developer &downarrow; </a></p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+    <script src="../static/script.js"></script>
+  </body>
+</html>

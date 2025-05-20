@@ -1,0 +1,763 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #bd1ebd;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a0099;
+}
+body {
+  line-height: 1.6;
+}
+/* navbar styling */
+nav {
+  width: 100%;
+  position: fixed;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+nav.sticky {
+  background: white;
+  padding: 13px 0;
+}
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background: white;
+}
+nav .navbar .logo img {
+  height: 52px;
+  width: 64px;
+}
+nav.sticky .navbar .logo a {
+  color: #9a0099;
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #9a0099;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover {
+  color: #9a0099;
+}
+nav.sticky .menu a {
+  color: #9a0099;
+}
+nav.sticky .menu a:hover {
+  color: #0e2431;
+}
+.navbar .media-icons a {
+  color: #9a0099;
+  font-size: 18px;
+  margin: 0 6px;
+  padding: 8px;
+}
+
+nav.sticky .media-icons a {
+  color: #fff;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn {
+  color: #9a0099;
+}
+nav.sticky .menu-btn {
+  color: #9a0099;
+}
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* home section styling */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("Images/Img-12.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one {
+  font-size: 40px;
+   font-weight: 800;
+  color: #9a0099;
+  margin-bottom: 15px;
+}
+.home .text-two {
+  color: #9a0099;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+  margin-bottom: 15px;
+}
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #9a0099;
+  margin-bottom: 15px;
+}
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #9a0099;
+  margin-bottom: 15px;
+}
+.home .button {
+  margin: 14px 0;
+}
+.home .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #9a0099;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover {
+  border-color: #9a0099;
+  background-color: #fff;
+  color: #9a0099;
+}
+#typed-container .typed-line {
+  display: block;      /* Make each line block so they stack vertically */
+  margin-bottom: 2px;  /* Space between lines */
+  font-size: clamp(20px, 5vw, 45px);   /* Adjust automatically */
+  font-weight: 600;    /* Semi-bold */
+  color: #9a0099;
+}
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section {
+  padding-top: 40px;
+}
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+}
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span {
+  color: #0e2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #9a0099;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left {
+  width: 45%;
+}
+.about .left img {
+  height: 500px;
+  width: 400px;
+  border-radius: 12px;
+}
+.about-details .right {
+  width: 55%;
+}
+section .topic {
+  color: #0e2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+section .about-text {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.about-details .right p {
+  color: #0e2431;
+}
+section .button {
+  margin: 16px 0;
+}
+.top {
+  margin-top: 30px;
+}
+section .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #9a0099;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover {
+  border-color: #9a0099;
+  background-color: #fff;
+  color: #9a0099;
+}
+
+/* My Skills CSS */
+.skills {
+  background: #f0f8ff;
+}
+.skills .content {
+  padding: 40px 0;
+}
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills-details .text {
+  width: 50%;
+}
+.skills-details p {
+  color: #0e2431;
+}
+.skills .skills-details .experience {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.skills-details .experience .num {
+  color: #0e2431;
+  font-size: 80px;
+}
+.skills-details .experience .exp {
+  color: #0e2431;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.skills-details .boxes {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.skills-details .boxes .topic {
+  font-size: 20px;
+  color: #9a0099;
+}
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: #9a0099;
+}
+
+/* My Services CSS */
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover {
+  background: #9a0099;
+  color: #fff;
+}
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #9a0099;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon {
+  background-color: #fff;
+  color: #9a0099;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #0e2431;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #fff;
+}
+.para {
+text-align: justify
+}
+/* Modal styling */
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* dark overlay */
+}
+
+/* Modal Content Container */
+.modal-content {
+  position: relative;
+  margin: 5vh auto;
+  background: white;
+  padding: 0;
+  width: 70%;
+  height: 90vh;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close Button */
+.close-btn {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* PDF iframe */
+#pdfFrame {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* Button controls below iframe */
+.modal-controls {
+  background: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-controls button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background-color: #9a009a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-controls button:hover {
+  background-color: #770077;
+}
+
+/* Contact Me CSS */
+.contact {
+  background: #f0f8ff;
+}
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.get-in-touch {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 40px 0;
+}
+
+.address-img:hover {
+  background-color: white;
+  color: #9a0099;
+  border: 3px solid #9a0099;
+}
+.address-img {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9a0099;
+  border-radius: 50%;
+}
+.address-link {
+  font-size: 20px;
+  color: #9a0099;
+  text-align: center;
+}
+.address-link:link,
+.address-link:visited {
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.address-link:hover,
+.address-link:active {
+  color: white;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  background-color: white;
+  transition: all 0.4s;
+}
+.footer-link:hover,
+.footer-link:active {
+  background-color: white;
+}
+.footer-img {
+  height: 20px;
+  width: 20px;
+}
+
+.dev {
+  color: white;
+}
+
+/* Footer CSS */
+footer {
+  background: #9a0099;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer .text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a {
+  font-weight: 500;
+  color: #fff;
+}
+footer .text span a:hover {
+  text-decoration: underline;
+}
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: #9a0099;
+  outline: none;
+}
+
+.contact-form .form-button button {
+  background-color: #9a0099;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form .form-button button:hover {
+  background-color: white;
+  color: #9a0099;
+  border: 2px solid #9a0099;
+}
+
+/* ADDED - Style for View Project Details buttons */
+.btn-view {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #9a0099;  /* Button background */
+  color: #ffffff;             /* Button text color */
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #ffffff;  /* Hover background */
+  color: #9a0099;             /* Hover text color */
+  border: 1px solid #9a0099;
+}
+
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #9a0099;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img {
+    height: 350px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: rgba(154, 0, 154, 0.9);
+
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.6s ease;
+  }
+  .navbar.active .menu {
+    left: 0;
+  }
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover {
+    color: #9a0099;
+  }
+  nav .navbar .media-icons {
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+  .home .text-two {
+    font-size: 65px;
+  }
+  .home .text-three {
+    font-size: 35px;
+  }
+  .skills .skills-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text {
+    width: 100%;
+  }
+  .get-in-touch {
+    display: grid;
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 40px;
+  }
+  .home .text-three {
+    font-size: 23px;
+  }
+  .skills-details .boxes .per {
+    font-size: 50px;
+    color: #9a0099;
+  }
+  footer .text span {
+    font-size: 14px;
+  }
+  .home .text-one {
+    font-size: 25px;
+   font-weight: 500;
+  }
+  .home .text-four {
+    font-size: 20px;
+  }
+  .home .button button {
+    font-size: 18px;
+  }
+  section .button button {
+    font-size: 18px;
+  }
+
+  .skills-details .boxes .topic {
+    font-size: 15px;
+  }
+  .skills-details .boxes .per {
+    font-size: 35px;
+  }
+
+  .skills-details .experience .num {
+    font-size: 60px;
+  }
+  section .topic {
+    font-size: 23px;
+    font-weight: 500;
+  }
+}
