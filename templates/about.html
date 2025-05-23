@@ -28,11 +28,11 @@
       <div class="navbar" >
         <div class="logo"><a><img src="/static/Images/LOGO_ME.png" alt=""></a></div>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('resume') }}">Resume</a></li>
+          <li><a href="{{ url_for('services') }}">Services</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
           <div class="cancel-btn">
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
@@ -102,7 +102,7 @@
               
               <a
                 class="address-link"
-                href="contact.html"
+                href="{{ url_for('contact') }}"
                 ><div class="address-img">
                   <img class="footer-img" src="/static/Images/contact-email.svg" alt="contact-address" />
                 </div>
