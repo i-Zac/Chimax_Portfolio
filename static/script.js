@@ -44,6 +44,24 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
+//about dynamic image
+  // Array of image paths (adjust to your real paths and names)
+  const images = [
+    '../static/Images/Img-2.jpg',
+    '../static/Images/Img-4.jpg',
+    '../static/Images/Img-3.jpg'  // add as many as you want
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById('about-img');
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;  // loop back to start
+    imgElement.src = images[currentIndex];
+  }, 1000);  // 1000 milliseconds = 1 second
+
+
+
 
 // Dynamically open the modal and configure buttons
 function openPDFModal(pdfList) {
