@@ -49,6 +49,7 @@ for (var i = 0; i < navLinks.length; i++) {
   const images = [
     '../static/Images/Img-2.jpg',
     '../static/Images/Img-4.jpg',
+    '../static/Images/Img-5.jpg',
     '../static/Images/Img-3.jpg'  // add as many as you want
   ];
 

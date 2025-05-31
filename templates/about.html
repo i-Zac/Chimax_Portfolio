@@ -26,7 +26,7 @@
     <!-- navigation menu -->
     <nav>
       <div class="navbar" >
-        <div class="logo"><a><img src="/static/Images/LOGO_ME.png" alt=""></a></div>
+        <div class="logo"><a href="{{ url_for('home') }}"><img src="/static/Images/LOGO_ME.png" alt=""></a></div>
         <ul class="menu">
           <li><a href="{{ url_for('home') }}">Home</a></li>
           <li><a href="{{ url_for('about') }}">About</a></li>
@@ -58,7 +58,7 @@
         <div class="title"><span>About Me</span></div>
         <div class="about-details">
           <div class="left">
-            <img id="about-img" src="../static/Images/Img-3.jpg" alt="" />
+            <img id="about-img" src="../static/Images/Img-3.jpg" alt=" " />
           </div>
           <div class="right">
             <div class="topic">"Efficiency, Organization, Success - Let me Handle the rest!"</div>

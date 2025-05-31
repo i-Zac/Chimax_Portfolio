@@ -26,7 +26,7 @@
     <!-- navigation menu -->
     <nav>
       <div class="navbar">
-        <div class="logo"><a><img src="/static/Images/LOGO_ME.png" alt=""></a></div>
+        <div class="logo"><a href="{{ url_for('home') }}" ><img src="/static/Images/LOGO_ME.png" alt=""></a></div>
         <ul class="menu">
           <li><a href="{{ url_for('home') }}">Home</a></li>
           <li><a href="{{ url_for('about') }}">About</a></li>
@@ -55,7 +55,7 @@
         <div class="text-one">Hello,</div>
             <div id="typed-container" class="text"></div>
         <div class="button">
-          <a href="contact.html"><button>Hire Me</button></a>
+          <a href="{{ url_for('contact') }}"><button>Hire Me</button></a>
           
         </div>
       </div>
