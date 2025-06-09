@@ -1,6 +1,6 @@
 # 🌐 Chimax Portfolio
 
-Welcome to my **Chimax portfolio website**, built with **Flask**, **HTML/CSS**, and **JavaScript** — showcasing my work, resume, and contact form with email automation.
+Welcome to my **Chimax portfolio website**, built with **Flask**, **HTML/CSS**, and **JavaScript** - showcasing my work, resume, and contact form with email automation.
 
 ![Screenshot](static/Images/Img-3.jpg)
 
